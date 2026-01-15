@@ -1,0 +1,191 @@
+.track-request-page {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+/* Sidebar */
+.track-request-page .sidebar {
+  width: 300px;
+  min-width: 300px;
+  height: 100vh;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.track-request-page .main-content {
+  margin-left: 300px;
+  padding: 40px 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.track-request-page .track-requests-container {
+  width: 100%;
+  max-width: 1000px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+}
+
+.track-request-page .page-title {
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.track-request-page .error-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.track-request-page .leave-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.track-request-page .leave-table th,
+.track-request-page .leave-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.track-request-page .leave-table th {
+  background: #f4f4f4;
+  font-weight: bold;
+}
+
+.track-request-page .no-requests {
+  text-align: center;
+  font-size: 16px;
+  color: #777;
+  padding: 20px;
+}
+
+/* Leave Type Badge */
+.track-request-page .leave-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.leave-badge.vacation {
+  background-color: orange;
+}
+
+.leave-badge.sick {
+  background-color: red;
+}
+
+.leave-badge.unpaid {
+  background-color: gray;
+}
+
+.leave-badge.other {
+  background-color: #007bff;
+}
+
+
+.track-request-page .status {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.status.pending {
+  background-color: #ffec99;
+  color: #333;
+}
+
+.status.approved {
+  background-color: #28a745;
+  color: white;
+}
+
+.status.rejected {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Optional Row Highlights */
+.track-request-page .row-pending {
+  background-color: #fffdf2;
+}
+.track-request-page .row-approved {
+  background-color: #f2fff5;
+}
+.track-request-page .row-rejected {
+  background-color: #fff5f5;
+}
+
+/* Sidebar */
+.track-request-page .logo-img {
+  width: 250px;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.track-request-page .nav-btn {
+  border: none;
+  background-color: white;
+  padding: 12px;
+  margin: 10px auto;
+  width: 80%;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.track-request-page .nav-btn:hover {
+  background-color: #E8C641;
+  color: white;
+}
+
+.track-request-page .nav-btn.active {
+  font-weight: bold;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .track-request-page .sidebar {
+    display: none;
+  }
+
+  .track-request-page .main-content {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .track-request-page .track-requests-container {
+    padding: 20px;
+  }
+
+  .track-request-page .leave-table th,
+  .track-request-page .leave-table td {
+    font-size: 13px;
+    padding: 10px;
+  }
+}

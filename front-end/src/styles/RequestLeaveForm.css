@@ -1,0 +1,145 @@
+.request-leave-page {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Sidebar specific to this page */
+.request-leave-page .sidebar {
+  width: 300px;
+  min-width: 300px;
+  height: 100vh;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+/* Main Content */
+.request-leave-page .main-content {
+  margin-left: 300px;
+  padding: 40px 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Form Container */
+.request-leave-page .request-leave-container {
+  max-width: 600px;
+  width: 100%;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Form Styling */
+.request-leave-page .leave-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.request-leave-page input,
+.request-leave-page select,
+.request-leave-page textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.request-leave-page textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Submit Button */
+.request-leave-page .submit-btn {
+  background-color: #6c63ff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.request-leave-page .submit-btn:hover {
+  background-color: #554eea;
+}
+
+/* Leave Balance Box */
+.request-leave-page .leave-balance-box {
+  background: #e8f0ff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+  border-left: 4px solid #6c63ff;
+}
+
+/* Logo Styling */
+.request-leave-page .logo-img {
+  width: 160px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+/* Sidebar Buttons */
+.request-leave-page .nav-btn {
+  border: none;
+  background-color: white;
+  padding: 12px;
+  margin: 10px auto;
+  width: 80%;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.request-leave-page .nav-btn:hover {
+  background-color: #E8C641;
+  color: white;
+}
+
+.request-leave-page .nav-btn.active {
+  font-weight: bold;
+}
+
+/* Feedback */
+.request-leave-page .success-message {
+  color: green;
+  font-weight: bold;
+}
+
+.request-leave-page .error-message {
+  color: red;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .request-leave-page .sidebar {
+    display: none;
+  }
+
+  .request-leave-page .main-content {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .request-leave-page .request-leave-container {
+    padding: 20px;
+  }
+}
